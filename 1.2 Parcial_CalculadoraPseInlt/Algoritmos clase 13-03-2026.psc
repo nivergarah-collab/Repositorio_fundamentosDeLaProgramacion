@@ -1,0 +1,48 @@
+Proceso algoritmo_clase_suma
+Definir vacia Como Caracter;
+Definir a,b,c, x, resultado como real;
+Definir i Como Entero;
+	Escribir "tipo de operacion: 1 = suma, 2 = resta, 3 = multiplicacion, 4 = divicion, 5 = potencia";
+	Repetir
+	Leer x;
+Si x = 1 o x = 2 o x = 3 o x = 4 o x = 5 Entonces
+	vacia = " ";
+SiNo
+	Escribir "vuelva a ingresar una opcion";
+FinSi
+	Hasta Que x = 1 o x = 2 o x = 3 o x = 4 o x = 5;
+	Escribir "Numero 1";
+	Leer a;
+	Escribir "Numero 2";
+	Leer b;	
+	Segun x Hacer
+		1:
+			Escribir a + b ;
+		2:
+			Escribir a - b ;
+		3:
+			Escribir a * b ;
+		4:
+			Escribir a / b ;
+		5:
+			Segun b Hacer
+				0:
+					Escribir 1;
+				1:
+					Escribir a;
+				De Otro Modo:
+					i = 1;
+					Repetir
+						c = a * a;
+						i = i + 1;
+					Hasta Que i = b;
+					Escribir c;
+			FinSegun;
+		De Otro Modo:
+			Escribir "error";
+	FinSegun
+	
+Fin Proceso
+
+
+
