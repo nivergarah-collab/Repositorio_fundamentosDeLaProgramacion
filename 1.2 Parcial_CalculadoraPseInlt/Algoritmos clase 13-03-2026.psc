@@ -25,19 +25,17 @@ FinSi
 		4:
 			Escribir a / b ;
 		5:
-			Segun b Hacer
-				0:
-					Escribir 1;
-				1:
-					Escribir a;
-				De Otro Modo:
-					i = 1;
-					Repetir
-						c = a * a;
-						i = i + 1;
-					Hasta Que i = b;
-					Escribir c;
-			FinSegun;
+			Si b = 0 Entonces
+				Escribir 1;
+			SiNo
+				i = 1;
+				c = 1;
+				Repetir
+					c = c * a;
+					i = i + 1;
+				Hasta Que i > b;
+				Escribir c;
+			FinSi
 		De Otro Modo:
 			Escribir "error";
 	FinSegun
